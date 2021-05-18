@@ -5,11 +5,13 @@
  * Return the area of water it would hold.
  * 
  * heights = [1,8,6,2,9,4]
- * maxArea = 24
+ * height = 8
+ * width = 3
+ * maxArea = height * width = 24
  * 
  * 10
  * 9             -
- * 8    -        -  
+ * 8    -xxxxxxxx-  
  * 7    -        -  
  * 6    -  -     -  
  * 5    -  -     -  
