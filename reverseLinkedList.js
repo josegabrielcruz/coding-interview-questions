@@ -3,9 +3,43 @@
  * @param {*} head Linked list
  * @returns Reversed linked list
  * 
- * reverseLinkedList(linkedList);
- * 1 -> 2 -> 3 -> 4 -> 5 -> null
- * 5 -> 4 -> 3 -> 2 -> 1 -> null
+ * linkedList = 1 -> 2 -> 3 -> 4 -> 5 -> null
+ * reverseLinkedList(linkedList) {
+ * 
+ * prev = null
+ * current = 1
+ * 
+ * ITERATION 1:
+ *  next = 1.next (2)
+ *  1.next = null
+ *  prev = 1
+ *  current = 2
+ * ITERATION 2:
+ *  next = 2.next (3)
+ *  2.next = 1
+ *  prev = 2
+ *  current = 3
+ * ITERATION 3:
+ *  next = 3.next (4)
+ *  3.next = 2
+ *  prev = 3
+ *  current = 4
+ * ITERATION 4:
+ *  next = 4.next (5)
+ *  4.next = 3
+ *  prev = 4
+ *  current = 5
+ * ITERATION 5
+ *  next = 5.next (null)
+ *  5.next = 4
+ *  prev = 5
+ *  current = null
+ * ITERATION 6:
+ *  current === null
+ *  break loop
+ * 
+ * return 5 -> 4 -> 3 -> 2 -> 1 -> null
+ * }
  */
 let reverseLinkedList = (head) => {
     let prev = null;
