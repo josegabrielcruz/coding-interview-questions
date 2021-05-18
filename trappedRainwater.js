@@ -1,6 +1,16 @@
 /**
  * Given an array of integers representing an elevation map where the width of 
  * each bar is 1, return how much rainwater can be trapped.
+ * 
+ * [0,1,0,2,1,0,3,1,0,1,2]
+ * total water = 8
+ * 
+ * 4                   __
+ * 3          __      |  |          __
+ * 2    __   |  |__   |  |__    __ |  |
+ * 1   |  |  |     |  |     |  |      |
+ * 0---------------------------------------
+ *   0  1  0  2  1  0  3  1  0  1  2
  */
 
 /* Brute force */
