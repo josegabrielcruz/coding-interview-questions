@@ -5,7 +5,7 @@
  * 
  * Return the list as a single level flattened doubly linked list.
  *  
- * @param {*} head Doubly inked list
+ * @param {*} head Doubly linked list
  * @returns Flattened doubly linked list
  * 
  * WALKTHROUGH:
