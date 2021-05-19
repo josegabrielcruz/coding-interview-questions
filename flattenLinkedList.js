@@ -36,8 +36,9 @@
  *       10-11
  *
  * currentNode = 2
+ * tail = currentNode.child
  * tail = 9 // while tail.next !== null 7 -> 8 -> 9
- * tail.next = 3 // 9.next = 3
+ * tail.next = currentNode.next // 9.next = 3
  * tail.next.prev = tail // 3.prev = 9
  * currentNode.next = currentNode.child // 2.next = 7
  * currentNode.next.prev = currentNode // 7.prev = 2
@@ -51,15 +52,16 @@
  *
  * >-- Loop ---------------------------------------
  *
- * 7 node does not have children, keep moving t0 8 node
+ * 7 node does not have children, keep moving to 8 node
  *
  * 1-2-7-[8-9]-3-4-5-6
  *        |        |
  *       [10-11]   12-13
  *
  * currentNode = 8
+ * tail = currentNode.child
  * tail = 11 // while tail.next !== null 10 -> 11
- * tail.next = 9 // 11.next = 9
+ * tail.next = currentNode.next // 11.next = 9
  * tail.next.prev = tail // 9.prev = 11
  * currentNode.next = currentNode.child // 8.next = 10
  * currentNode.next.prev = currentNode // 10.prev = 8
@@ -80,8 +82,9 @@
  *                     [12-13]
  *
  * currentNode = 5
+ * tail = currentNode.child
  * tail = 13 // while tail.next !== null 12 -> 13
- * tail.next = 6 // 13.next = 6
+ * tail.next = currentNode.next // 13.next = 6
  * tail.next.prev = tail // 6.prev = 13
  * currentNode.next = currentNode.child // 5.next = 12
  * currentNode.next.prev = currentNode // 12.prev = 5
