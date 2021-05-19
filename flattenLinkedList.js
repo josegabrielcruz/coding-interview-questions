@@ -42,6 +42,11 @@
  * currentNode.next = currentNode.child // 2.next = 7
  * currentNode.next.prev = currentNode // 7.prev = 2
  * currentNode.child = null
+ * 
+ * // current state of linked list
+ * 1-2-7-8-9-3-4-5-6
+ *       |       |
+ *       10-11   12-13 
  * ------------------------------------------------|
  *
  * >-- Loop ---------------------------------------
@@ -59,6 +64,11 @@
  * currentNode.next = currentNode.child // 8.next = 10
  * currentNode.next.prev = currentNode // 10.prev = 8
  * currentNode.child = null
+ * 
+ * // current state of linked list
+ * 1-2-7-8-9-3-4-5-6
+ *               |
+ *               12-13 
  * ------------------------------------------------|
  *
  * >-- Loop ---------------------------------------
@@ -76,11 +86,14 @@
  * currentNode.next = currentNode.child // 5.next = 12
  * currentNode.next.prev = currentNode // 12.prev = 5
  * currentNode.child = null
+ * 
+ * // current state of linked list
+ * 1-2-7-8-10-11-9-3-4-5-12-13-6
  * -----------------------------------------------|
  *
  * }
  * }
- * return head
+ * return head // 1-2-7-8-10-11-9-3-4-5-12-13-6
  * }
  */
 
