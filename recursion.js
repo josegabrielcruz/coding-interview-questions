@@ -45,3 +45,16 @@ tailFactorial(1,24)
 tailFactorial(0,24)
 -> 24
 */
+
+/**
+ * Key difference between normal recursion and tail recursion is that the 
+ * recursive case in tail recursion isn't waiting for the previouse recursive
+ * function call to resolve.
+ * 
+ * normal recursion
+ * return n * normalFactorial(n - 1);
+ *        ^
+ * 
+ * tail recursion
+ * return tailFactorial(n - 1, totalSoFar * n);
+ */
