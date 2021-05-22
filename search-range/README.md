@@ -126,9 +126,9 @@ while (endPos !== -1) {
 endPos = temp2;
 ```
 
-So, why do we have two while loops here? Well, the requirements tell us that we need to find the starting index and ending index of the target. If we are given an array that looks like this: `[1,2,3,4,5,5,5,6,7]`, and our target is 5, our `firstPos` variable will be 4, which means that our `startPos` and `endPos` variables will be 4 as well. At this point we don't know if there are more targets to the left or right of our `firstPos`.
+So, why do we have two while loops here? Well, the requirements tell us that we need to find the starting index and ending index of the target. If we are given an array that looks like this: `[1,2,3,4,5,5,5,6,7]`, and our `target` is 5, our `firstPos` variable will be 4, which means that our `startPos` and `endPos` variables will be 4 as well. At this point we don't know if there are more targets to the left or right of our `firstPos`.
 
-This is the problem that the while loops will solve. Each loop iteration will call `binarySearch` until its scanned through all of the numbers in the array. The first loop will scan to the left looking for targets, the second loop will scan to the right looking for targets.
+This is the problem that the while loops will solve. Each loop iteration will call `binarySearch` until it has found the last instance of the `target` or its scanned through all of the numbers in the array. The first loop will scan to the left looking for targets, the second loop will scan to the right looking for targets.
 
 Let's walk through the first while loop:
 
