@@ -181,7 +181,3 @@ Now we have the required ending index and we'll return an array containing those
 ```javascript
 return [startPos, endPos]; //[4,6]
 ```
-
-
-
-//
